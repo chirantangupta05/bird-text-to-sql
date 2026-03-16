@@ -174,4 +174,5 @@ MIT License
 
 - [BIRD Benchmark](https://bird-bench.github.io/) team for the dataset
 - Prof. Y.V.K. Ravi Kumar (Academic Supervisor)
+- Soumya Sen , PwC (Industry and Academic Supervisor)
 - Srikanth Valluri, PwC (Industry Supervisor)
