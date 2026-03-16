@@ -1,0 +1,33 @@
+{
+  "customers": {
+    "CustomerID": "Unique identifier for each customer, facilitating data management and retrieval.",
+    "Segment": "Categorizes customers into distinct groups for targeted marketing strategies.",
+    "Currency": "Denotes the currency used for transactions, ensuring accurate financial reporting."
+  },
+  "gasstations": {
+    "GasStationID": "Unique identifier for each gas station in the database.",
+    "ChainID": "Identifier representing the gas station's parent company or chain.",
+    "Country": "Three-letter code indicating the country where the gas station is located.",
+    "Segment": "Classification of the gas station based on pricing and service quality."
+  },
+  "products": {
+    "ProductID": "Unique identifier for each product, ensuring distinct entries in the database.",
+    "Description": "Detailed information about the product, providing context and usage for customers."
+  },
+  "transactions_1k": {
+    "TransactionID": "Unique identifier for each transaction, ensuring distinct record tracking.",
+    "Date": "The date when the transaction occurred, formatted as YYYY-MM-DD.",
+    "Time": "The specific time of day the transaction took place, in HH:MM:SS format.",
+    "CustomerID": "Unique identifier for each customer, allowing for personalized transaction tracking.",
+    "CardID": "Unique identifier for the payment card used in the transaction.",
+    "GasStationID": "Unique identifier for the gas station where the transaction occurred.",
+    "ProductID": "Unique identifier for the product purchased during the transaction.",
+    "Amount": "The quantity of the product purchased in the transaction.",
+    "Price": "The total price of the transaction, reflecting the cost of purchased items."
+  },
+  "yearmonth": {
+    "CustomerID": "Unique identifier for each customer, facilitating personalized data tracking and analysis.",
+    "Date": "Represents the year and month of data in a six-character numeric format.",
+    "Consumption": "Measures the amount consumed, reflecting customer usage patterns and trends over time."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "alignment": {
+    "id": "Unique identifier for each alignment category, ranging from 1 to 4.",
+    "alignment": "Descriptive quality of alignment, indicating performance from Bad to Neutral."
+  },
+  "attribute": {
+    "id": "Unique identifier for each attribute, ranging from 1 to 6.",
+    "attribute_name": "Descriptive name of the attribute, indicating its specific characteristic."
+  },
+  "colour": {
+    "id": "Unique identifier for each colour entry, ensuring distinct records.",
+    "colour": "Descriptive name of the colour, representing various shades and combinations."
+  },
+  "gender": {
+    "id": "Unique numeric identifier for each gender category.",
+    "gender": "Descriptive label representing the gender identity of individuals."
+  },
+  "publisher": {
+    "id": "Unique identifier for each publisher, ensuring distinct records in the database.",
+    "publisher_name": "Name of the publisher, representing the brand behind the published content."
+  },
+  "race": {
+    "id": "Unique identifier for each race entry in the database.",
+    "race": "Descriptive name of the fictional race or species represented."
+  },
+  "superhero": {
+    "id": "Unique identifier for each superhero in the database.",
+    "superhero_name": "The alias or title used by the superhero in their adventures.",
+    "full_name": "The real name of the superhero, often revealing their identity.",
+    "gender_id": "Numeric representation of the superhero's gender identity.",
+    "eye_colour_id": "Numeric code indicating the superhero's eye color.",
+    "hair_colour_id": "Numeric code representing the superhero's hair color.",
+    "skin_colour_id": "Numeric code denoting the superhero's skin color.",
+    "race_id": "Numeric identifier for the superhero's racial background.",
+    "publisher_id": "Identifier for the comic book publisher associated with the superhero.",
+    "alignment_id": "Numeric value indicating the superhero's moral alignment.",
+    "height_cm": "Represents the superhero's height in centimeters, indicating their physical stature.",
+    "weight_kg": "Indicates the superhero's weight in kilograms, reflecting their mass and build."
+  },
+  "hero_attribute": {
+    "hero_id": "Unique identifier for each hero in the database.",
+    "attribute_id": "Identifier for the type of attribute assigned to the hero.",
+    "attribute_value": "Numeric value representing the strength or level of the attribute."
+  },
+  "superpower": {
+    "id": "Unique identifier for each superpower entry in the database.",
+    "power_name": "Descriptive name of the superpower, indicating its unique abilities and characteristics."
+  },
+  "hero_power": {
+    "hero_id": "Unique identifier for each hero in the database.",
+    "power_id": "Unique identifier for each power associated with heroes."
+  }
+}

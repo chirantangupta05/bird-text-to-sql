@@ -1,0 +1,122 @@
+{
+  "circuits": {
+    "circuitId": "Unique identifier for each racing circuit in the database.",
+    "circuitRef": "Short reference code for each circuit, aiding in quick identification.",
+    "name": "Official name of the racing circuit, representing its branding and identity.",
+    "location": "Geographical location of the circuit, indicating where it is situated.",
+    "country": "Country where the circuit is located, providing national context.",
+    "lat": "Latitude coordinate of the circuit, useful for mapping and geographical analysis.",
+    "lng": "Longitude coordinate of the circuit, essential for precise location tracking.",
+    "alt": "Altitude of the circuit, currently not available in the dataset.",
+    "url": "Link to the Wikipedia page for detailed information about the circuit."
+  },
+  "constructors": {
+    "constructorId": "Unique identifier for each constructor in the database.",
+    "constructorRef": "Short reference name for each constructor, used for easy identification.",
+    "name": "Full name of the constructor, representing their official title.",
+    "nationality": "Country of origin for the constructor, indicating their national identity.",
+    "url": "Link to the constructor's Wikipedia page for additional information."
+  },
+  "drivers": {
+    "driverId": "Unique identifier for each driver in the database.",
+    "driverRef": "Alphanumeric reference name for each driver, aiding in identification.",
+    "number": "Driver's racing number, often used for identification during competitions.",
+    "code": "Three-letter code representing the driver's team or nationality.",
+    "forename": "Driver's first name, providing a personal touch to their identity.",
+    "surname": "Driver's last name, essential for distinguishing between individuals.",
+    "dob": "Date of birth, crucial for determining the driver's age and eligibility.",
+    "nationality": "Country of origin for the driver, reflecting their cultural background.",
+    "url": "Link to additional information about the driver, enhancing data accessibility."
+  },
+  "seasons": {
+    "year": "Represents the specific year of the Formula One season, from 1950 to 2017.",
+    "url": "Links to detailed information about each Formula One season on Wikipedia."
+  },
+  "races": {
+    "raceId": "Unique identifier for each race event in the database.",
+    "year": "Year when the race took place, spanning from 1950 to 2017.",
+    "round": "Sequential number indicating the race's position in the championship series.",
+    "circuitId": "Identifier for the specific circuit where the race was held.",
+    "name": "Official name of the race, reflecting its location or title.",
+    "date": "Date of the race in YYYY-MM-DD format.",
+    "time": "Scheduled start time of the race, if available.",
+    "url": "Link to the Wikipedia page for detailed race information."
+  },
+  "constructorResults": {
+    "constructorResultsId": "Unique identifier for each constructor's race result entry.",
+    "raceId": "Identifier for the specific race associated with the constructor's results.",
+    "constructorId": "Identifier for the constructor participating in the race.",
+    "points": "Points awarded to the constructor based on race performance.",
+    "status": "Indicates the result status, with 'D' representing a specific condition."
+  },
+  "constructorStandings": {
+    "constructorStandingsId": "Unique identifier for each constructor standings entry.",
+    "raceId": "Identifier for the specific race associated with the standings.",
+    "constructorId": "Identifier for the constructor competing in the race.",
+    "points": "Total points earned by the constructor in the standings.",
+    "position": "Rank position of the constructor in the standings.",
+    "positionText": "Textual representation of the constructor's rank position.",
+    "wins": "Total number of races won by the constructor."
+  },
+  "driverStandings": {
+    "driverStandingsId": "Unique identifier for each driver's standings record in the database.",
+    "raceId": "Identifier for the specific race associated with the driver's standings.",
+    "driverId": "Unique identifier for each driver participating in the races.",
+    "points": "Total points earned by the driver based on race performance.",
+    "position": "Numeric ranking of the driver in the race, indicating finishing order.",
+    "positionText": "Textual representation of the driver's finishing position, including letters for special cases.",
+    "wins": "Total number of races won by the driver throughout the season."
+  },
+  "lapTimes": {
+    "raceId": "Identifies the specific race event associated with the lap times.",
+    "driverId": "Represents the unique identifier for each driver participating in the race.",
+    "lap": "Indicates the lap number completed during the race.",
+    "position": "Denotes the driver's position in the race at the end of the lap.",
+    "time": "Records the lap completion time in a standard time format.",
+    "milliseconds": "Stores the lap completion time in milliseconds for precise timing."
+  },
+  "pitStops": {
+    "raceId": "Identifies the specific race event associated with the pit stop.",
+    "driverId": "Unique identifier for the driver making the pit stop.",
+    "stop": "Indicates the sequence number of the pit stop during the race.",
+    "lap": "Represents the lap number when the pit stop occurred.",
+    "time": "Records the exact time of day when the pit stop was made.",
+    "duration": "Measures the length of the pit stop in seconds.",
+    "milliseconds": "Provides the duration of the pit stop in milliseconds for precision."
+  },
+  "qualifying": {
+    "qualifyId": "Unique identifier for each qualifying event in the database.",
+    "raceId": "Identifier linking to specific races, ensuring data relates to the correct event.",
+    "driverId": "Unique identifier for each driver, facilitating tracking of individual performance.",
+    "constructorId": "Identifier for constructors, representing teams responsible for vehicle design and performance.",
+    "number": "Driver's racing number, used for identification during events.",
+    "position": "Final qualifying position achieved by the driver in the event.",
+    "q1": "Time taken in the first qualifying session, formatted as mm:ss.sss.",
+    "q2": "Time taken in the second qualifying session, may be NULL if not applicable.",
+    "q3": "Time taken in the third qualifying session, often NULL if not completed."
+  },
+  "status": {
+    "statusId": "Unique identifier for each status, facilitating efficient data retrieval and management.",
+    "status": "Descriptive label representing the current state or condition of an entity."
+  },
+  "results": {
+    "resultId": "Unique identifier for each race result entry.",
+    "raceId": "Identifier for the specific race associated with the result.",
+    "driverId": "Identifier for the driver who achieved the result.",
+    "constructorId": "Identifier for the constructor of the vehicle used in the race.",
+    "number": "Car number assigned to the driver during the race.",
+    "grid": "Starting position of the driver on the grid for the race.",
+    "position": "Final finishing position of the driver in the race.",
+    "positionText": "Textual representation of the driver's finishing position.",
+    "positionOrder": "Order of positions based on race results.",
+    "points": "Points awarded to the driver based on their finishing position.",
+    "laps": "Total number of laps completed in the race, indicating distance covered.",
+    "time": "Total time taken to complete the race, formatted as a time string.",
+    "milliseconds": "Total race time in milliseconds, providing precise timing for performance analysis.",
+    "fastestLap": "The lap number where the fastest time was recorded during the race.",
+    "rank": "Position of the racer at the end of the race, indicating performance level.",
+    "fastestLapTime": "Time taken to complete the fastest lap, formatted as a time string.",
+    "fastestLapSpeed": "Average speed during the fastest lap, expressed in a numeric format.",
+    "statusId": "Identifier for the race status, indicating the outcome or condition of the racer."
+  }
+}

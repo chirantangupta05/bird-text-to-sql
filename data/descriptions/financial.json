@@ -1,0 +1,73 @@
+{
+  "account": {
+    "account_id": "Unique identifier for each account, ensuring distinct records in the database.",
+    "district_id": "Identifier representing geographical districts, facilitating regional data categorization.",
+    "frequency": "Payment frequency type, indicating how often payments are made for the account.",
+    "date": "Transaction or account-related date, providing temporal context for account activities."
+  },
+  "card": {
+    "card_id": "Unique identifier for each card, ensuring distinct records in the database.",
+    "disp_id": "Identifier for the display associated with the card, linking to visual representations.",
+    "type": "Categorizes the card into types like classic, junior, or gold for classification.",
+    "issued": "Date when the card was issued, providing historical context for its validity."
+  },
+  "client": {
+    "client_id": "Unique identifier for each client in the database.",
+    "gender": "Indicates the gender of the client, either male (M) or female (F).",
+    "birth_date": "The client's date of birth, formatted as YYYY-MM-DD.",
+    "district_id": "Identifier for the district where the client resides."
+  },
+  "disp": {
+    "disp_id": "Unique identifier for each distribution record in the database.",
+    "client_id": "Identifier representing the client associated with the distribution.",
+    "account_id": "Unique identifier for the account linked to the distribution entry.",
+    "type": "Categorizes the role in the distribution as either OWNER or DISPONENT."
+  },
+  "district": {
+    "district_id": "Unique identifier for each district, facilitating data organization and retrieval.",
+    "A2": "Names of districts, providing geographical context and regional identification.",
+    "A3": "Categorization of districts by broader regions, aiding in regional analysis.",
+    "A4": "Numeric codes representing postal areas within districts for logistical purposes.",
+    "A5": "Numeric values indicating specific attributes or classifications within districts.",
+    "A6": "Counts or measures related to districts, useful for statistical analysis.",
+    "A7": "Single-digit numeric values representing specific district characteristics or classifications.",
+    "A8": "Small integer values indicating categorical classifications within districts.",
+    "A9": "Numeric identifiers for district groupings, assisting in data segmentation.",
+    "A10": "Real numbers representing metrics or scores relevant to district performance.",
+    "A11": "Represents unique district identifiers within a specified numeric range.",
+    "A12": "Indicates a measurement value with precision, ranging from 0.2 to 7.3.",
+    "A13": "Denotes another measurement value, varying from 0.43 to 9.4.",
+    "A14": "Represents a numeric code associated with district characteristics.",
+    "A15": "Indicates a larger numeric identifier for districts, with some missing values.",
+    "A16": "Represents a broader numeric identifier for districts, covering a wide range."
+  },
+  "loan": {
+    "loan_id": "Unique identifier for each loan transaction in the database.",
+    "account_id": "Identifier linking the loan to a specific customer account.",
+    "date": "Date when the loan was issued or recorded in the system.",
+    "amount": "Total monetary value of the loan granted to the borrower.",
+    "duration": "Length of the loan term in months, indicating repayment period.",
+    "payments": "Calculated payment amount due for the loan, typically on a monthly basis.",
+    "status": "Current state of the loan, indicating its repayment status."
+  },
+  "order": {
+    "order_id": "Unique identifier for each order, ensuring distinct tracking of transactions.",
+    "account_id": "Identifier for the customer account associated with the order.",
+    "bank_to": "Two-character code representing the destination bank for the transaction.",
+    "account_to": "Numeric identifier for the recipient's account receiving the funds.",
+    "amount": "Monetary value of the transaction, indicating the total funds transferred.",
+    "k_symbol": "Code representing the type of transaction or service associated with the order."
+  },
+  "trans": {
+    "trans_id": "Unique identifier for each transaction, ensuring distinct record tracking.",
+    "account_id": "Identifier for the account associated with the transaction, linking to account details.",
+    "date": "Date of the transaction, providing a timeline for financial activities.",
+    "type": "Transaction type indicating whether it is an income or expense.",
+    "operation": "Specific operation performed in the transaction, detailing the nature of the activity.",
+    "amount": "Monetary value involved in the transaction, representing the financial impact.",
+    "balance": "Account balance after the transaction, reflecting the current financial status.",
+    "k_symbol": "Symbol categorizing the transaction, aiding in classification and reporting.",
+    "bank": "Two-character code representing the bank involved in the transaction.",
+    "account": "Account number linked to the transaction, identifying the source or destination account."
+  }
+}

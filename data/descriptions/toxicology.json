@@ -1,0 +1,21 @@
+{
+  "atom": {
+    "atom_id": "Unique identifier for each atom, formatted as 'TRxxx_y'.",
+    "molecule_id": "Identifier for the molecule containing the atom, always 5 characters long.",
+    "element": "Chemical symbol representing the element of the atom, ranging from 'b' to 'zn'."
+  },
+  "bond": {
+    "bond_id": "Unique identifier for each bond, ensuring distinct entries in the database.",
+    "molecule_id": "Identifier for the associated molecule, formatted as a 5-character code.",
+    "bond_type": "Character representing the type of bond, indicating its nature or strength."
+  },
+  "connected": {
+    "atom_id": "Unique identifier for the first atom in a connection.",
+    "atom_id2": "Unique identifier for the second atom in a connection.",
+    "bond_id": "Unique identifier for the bond connecting two atoms."
+  },
+  "molecule": {
+    "molecule_id": "Unique identifier for each molecule, formatted as a 5-character code.",
+    "label": "Indicates the type of molecule with a simple positive or negative sign."
+  }
+}

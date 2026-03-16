@@ -1,0 +1,66 @@
+{
+  "event": {
+    "event_id": "Unique identifier for each event, ensuring distinct tracking and management.",
+    "event_name": "Descriptive title of the event, conveying its purpose and theme.",
+    "event_date": "Scheduled date and time of the event, formatted in ISO 8601.",
+    "type": "Categorization of the event, indicating its nature or focus area.",
+    "notes": "Additional information or instructions related to the event, enhancing participant understanding.",
+    "location": "Physical or virtual venue where the event will take place.",
+    "status": "Current state of the event, indicating whether it is open, closed, or in planning."
+  },
+  "major": {
+    "major_id": "Unique identifier for each major, ensuring distinct records in the database.",
+    "major_name": "Name of the academic major, representing the field of study offered.",
+    "department": "Department responsible for the major, indicating the academic unit's focus area.",
+    "college": "College affiliation of the department, reflecting the broader academic organization."
+  },
+  "zip_code": {
+    "zip_code": "Unique numeric identifier for specific geographic areas within the United States.",
+    "type": "Categorizes the nature of the zip code, such as Standard or PO Box.",
+    "city": "Name of the city associated with the zip code, indicating local urban areas.",
+    "county": "Identifies the county linked to the zip code, providing regional context.",
+    "state": "Full name of the state where the zip code is located, indicating jurisdiction.",
+    "short_state": "Abbreviated two-letter code representing the state of the zip code."
+  },
+  "attendance": {
+    "link_to_event": "Unique identifier linking attendance records to specific events.",
+    "link_to_member": "Unique identifier linking attendance records to individual members."
+  },
+  "budget": {
+    "budget_id": "Unique identifier for each budget entry, formatted as a 17-character code.",
+    "category": "Type of expense, categorizing budget items like Food or Advertisement.",
+    "spent": "Total amount of money already spent from the budget, represented as a decimal.",
+    "remaining": "Amount of budget left after expenditures, can be negative if overspent.",
+    "amount": "Initial budgeted amount for the category, represented as a whole number.",
+    "event_status": "Current status of the budgeted event, indicating its progress like Planning or Closed.",
+    "link_to_event": "Unique identifier linking to the associated event, formatted as a 17-character code."
+  },
+  "expense": {
+    "expense_id": "Unique identifier for each expense entry in the database.",
+    "expense_description": "Brief summary of the items or services purchased.",
+    "expense_date": "Date when the expense was incurred, formatted as YYYY-MM-DD.",
+    "cost": "Monetary amount spent on the expense, represented as a decimal.",
+    "approved": "Indicates whether the expense has been approved, always true.",
+    "link_to_member": "Identifier linking the expense to a specific member.",
+    "link_to_budget": "Identifier linking the expense to a specific budget category."
+  },
+  "income": {
+    "income_id": "Unique identifier for each income record, ensuring data integrity.",
+    "date_received": "Date when the income was received, formatted as YYYY-MM-DD.",
+    "amount": "Monetary value of the income, represented as an integer.",
+    "source": "Origin of the income, indicating the type of funding received.",
+    "notes": "Additional information about the income, providing context and details.",
+    "link_to_member": "Identifier linking the income to a specific member, maintaining relational data."
+  },
+  "member": {
+    "member_id": "Unique identifier for each member, formatted as a 17-character code.",
+    "first_name": "Member's first name, representing their personal identity.",
+    "last_name": "Member's last name, used for formal identification and communication.",
+    "email": "Member's email address for communication and account-related notifications.",
+    "position": "Current role of the member within the organization, indicating their responsibilities.",
+    "t_shirt_size": "Preferred t-shirt size of the member for events and merchandise.",
+    "phone": "Contact phone number for the member, facilitating direct communication.",
+    "zip": "Postal code representing the member's residential area, aiding in location identification.",
+    "link_to_major": "Reference code linking to the member's major, providing academic context."
+  }
+}

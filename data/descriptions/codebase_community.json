@@ -1,0 +1,89 @@
+{
+  "badges": {
+    "Id": "Unique identifier for each badge awarded to users.",
+    "UserId": "Identifier linking the badge to a specific user in the system.",
+    "Name": "Descriptive title of the badge representing user achievements or roles.",
+    "Date": "Timestamp indicating when the badge was awarded to the user."
+  },
+  "comments": {
+    "Id": "Unique identifier for each comment in the database.",
+    "PostId": "References the specific post associated with the comment.",
+    "Score": "Numeric rating indicating the quality or relevance of the comment.",
+    "Text": "Content of the comment, providing user feedback or discussion.",
+    "CreationDate": "Timestamp marking when the comment was created.",
+    "UserId": "Identifier for the user who made the comment.",
+    "UserDisplayName": "Display name of the user, often anonymized or pseudonymous."
+  },
+  "postHistory": {
+    "Id": "Unique identifier for each post history entry.",
+    "PostHistoryTypeId": "Identifier for the type of post history action performed.",
+    "PostId": "Identifier for the specific post associated with the history entry.",
+    "RevisionGUID": "Unique global identifier for tracking revisions of posts.",
+    "CreationDate": "Timestamp indicating when the post history entry was created.",
+    "UserId": "Identifier for the user who made the changes, can be null.",
+    "Text": "Content of the post history entry, detailing changes made.",
+    "Comment": "Description of the specific edits or actions taken on the post.",
+    "UserDisplayName": "Display name of the user associated with the post history entry."
+  },
+  "postLinks": {
+    "Id": "Unique identifier for each post link entry in the database.",
+    "CreationDate": "Timestamp indicating when the post link was created.",
+    "PostId": "Identifier for the original post associated with the link.",
+    "RelatedPostId": "Identifier for the related post linked to the original post.",
+    "LinkTypeId": "Numeric code representing the type of relationship between posts."
+  },
+  "posts": {
+    "Id": "Unique identifier for each post, ensuring distinct entries in the database.",
+    "PostTypeId": "Categorizes the type of post, such as question or answer.",
+    "AcceptedAnswerId": "References the post ID of the accepted answer, if applicable.",
+    "CreaionDate": "Timestamp indicating when the post was created, useful for chronological sorting.",
+    "Score": "Numeric value representing the post's popularity or quality based on user interactions.",
+    "ViewCount": "Total number of times the post has been viewed, indicating its reach.",
+    "Body": "Main content of the post, containing the user's question or answer in detail.",
+    "OwnerUserId": "ID of the user who created the post, linking to user profiles.",
+    "LasActivityDate": "Timestamp of the last activity on the post, useful for tracking engagement.",
+    "Title": "Brief summary or question posed in the post, providing context at a glance.",
+    "Tags": "Categorizes posts with relevant topics, enhancing searchability and content organization.",
+    "AnswerCount": "Indicates the number of answers provided for a post, reflecting engagement level.",
+    "CommentCount": "Tracks the number of comments on a post, showcasing user interaction and discussion.",
+    "FavoriteCount": "Counts how many users marked the post as a favorite, indicating its popularity.",
+    "LastEditorUserId": "Identifies the user who last edited the post, ensuring accountability and traceability.",
+    "LastEditDate": "Records the timestamp of the last edit, providing context for content updates.",
+    "CommunityOwnedDate": "Marks when the community took ownership of the post, indicating collaborative management.",
+    "ParentId": "Links to the parent post or thread, establishing a hierarchy in discussions.",
+    "ClosedDate": "Records when the post was closed, indicating the end of active engagement.",
+    "OwnerDisplayName": "Displays the username of the post owner, personalizing the content and authorship.",
+    "LastEditorDisplayName": "Identifies the user who last edited the post, enhancing accountability and traceability."
+  },
+  "tags": {
+    "Id": "Unique identifier for each tag, ensuring distinct entries in the database.",
+    "TagName": "Descriptive label for the tag, representing key concepts or topics.",
+    "Count": "Frequency of the tag's usage, indicating its popularity or relevance.",
+    "ExcerptPostId": "Identifier for posts associated with the tag, linking content to its context.",
+    "WikiPostId": "Identifier for related wiki posts, providing additional information on the tag."
+  },
+  "users": {
+    "Id": "Unique identifier for each user in the database.",
+    "Reputation": "Numeric score reflecting user contributions and community trust.",
+    "CreationDate": "Timestamp indicating when the user account was created.",
+    "DisplayName": "User's chosen name displayed publicly on the platform.",
+    "LastAccessDate": "Timestamp of the user's most recent activity on the platform.",
+    "WebsiteUrl": "User's personal or professional website link, often optional.",
+    "Location": "Geographical location of the user, providing context for their contributions.",
+    "AboutMe": "User's self-description, offering insights into their interests and background.",
+    "Views": "Count of how many times the user's content has been viewed.",
+    "UpVotes": "Number of positive votes received by the user's contributions.",
+    "DownVotes": "Counts the number of downvotes received by a user, indicating negative feedback.",
+    "AccountId": "Unique identifier for each user account, essential for user management and tracking.",
+    "Age": "User's age, providing demographic insights, though many entries are missing.",
+    "ProfileImageUrl": "URL linking to the user's profile image, enhancing personalization and identity."
+  },
+  "votes": {
+    "Id": "Unique identifier for each vote entry in the database.",
+    "PostId": "Identifier linking the vote to a specific post or content item.",
+    "VoteTypeId": "Categorizes the type of vote, indicating its nature or purpose.",
+    "CreationDate": "Date when the vote was cast, formatted as YYYY-MM-DD.",
+    "UserId": "Identifier for the user who cast the vote, with many entries being NULL.",
+    "BountyAmount": "Amount of bounty associated with the vote, often indicating reward value."
+  }
+}
